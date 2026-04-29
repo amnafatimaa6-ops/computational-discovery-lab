@@ -1,0 +1,196 @@
+Project Report 
+Overview
+
+This project is a machine learning-based real estate price prediction system designed for Karachi housing data. It predicts property prices using structured features like area, location, bedrooms, bathrooms, and
+property type. The system is deployed as an interactive Streamlit web application for real-time predictions.
+
+It demonstrates a complete end-to-end ML pipeline: data collection → EDA → feature engineering → model training → evaluation → deployment.
+
+Dataset
+
+The dataset consists of 189 real estate listings collected from publicly available sources.
+
+Features:
+Property Type (House / Flat)
+Bedrooms
+Bathrooms
+Area (sqft)
+Location
+Furnishing Status
+Price (PKR)
+Exploratory Data Analysis (EDA)
+
+Key insights:
+
+Houses are generally more expensive than flats
+Location has a major impact on price
+Price distribution is highly skewed
+Furnished properties are costlier
+Area and price contain outliers
+Feature Engineering
+
+To improve model performance:
+
+One-hot encoding for categorical variables
+Created:
+price_per_sqft
+total_rooms
+Applied log transformation:
+log_price
+log_area
+Standardized numerical features using StandardScaler
+
+Models Used
+1. Linear Regression
+R²: 0.78 – 0.83
+Simple but struggles with non-linearity
+2. Decision Tree
+R²: 0.86
+Captures non-linear relationships
+3. Random Forest  (Best Model)
+R²: 0.959
+Best performance due to ensemble learning
+Handles outliers and complexity well
+Final Model Selection
+
+Random Forest Regressor
+
+Highest accuracy
+Most stable predictions
+Best generalization
+
+Web App Features (Streamlit)
+
+Users can:
+
+Select bedrooms, bathrooms, area
+Choose location & property type
+Get instant price prediction
+View:
+Price range
+Model confidence
+Visual analytics (charts)
+
+Feature Importance
+
+Top drivers of price:
+
+Price per sqft
+Area
+Location
+Bedrooms & Bathrooms (moderate impact)
+
+Limitations
+Small dataset (189 entries)
+Possible overfitting
+Limited geographic coverage (only Karachi)
+No time-based trends included
+
+Future Improvements
+Add more real estate data
+Use XGBoost / LightGBM
+Add time-series pricing trends
+Deploy with database backend
+Add user login + saved searches
+
+Tech Stack
+
+Python 
+Pandas, NumPy
+Scikit-learn 
+Matplotlib, Seaborn 
+Plotly 
+Streamlit 
+
+ Questions
+
+1. What is my project about?
+
+It is a machine learning system that predicts house prices in Karachi using features like area, location, and property type, deployed using Streamlit.
+
+2. Why did i choose this project?
+
+Because real estate pricing is a real-world regression problem and it combines data science, ML, and deployment — a full-stack ML experience.
+
+3. What type of problem is this?
+
+It is a supervised regression problem.
+
+Data Questions
+
+4. What dataset did you use?
+
+A manually compiled dataset of 189 Karachi property listings.
+
+5. What challenges did you face in the data?
+Skewed price distribution
+Outliers (luxury properties)
+Small dataset size
+Mixed categorical + numerical data
+
+Feature Engineering
+
+6. Why did you use log transformation?
+
+To reduce skewness in price and stabilize variance for better model learning.
+
+7. Why did i create price per sqft?
+
+Because it normalizes property value and helps capture real market pricing trends.
+
+8. Why encoding categorical variables?
+
+Machine learning models require numerical input, so we converted categories into numeric form.
+
+Model Questions
+
+9. Why Random Forest performed best?
+
+Because it:
+
+Combines multiple decision trees
+Reduces overfitting
+Captures non-linear relationships
+Handles outliers better
+
+10. Difference between Linear Regression and Random Forest?
+
+Linear Regression	Random Forest
+Assumes linear relation	Handles non-linear patterns
+Sensitive to outliers	Robust to outliers
+Simple model	Ensemble of trees
+Lower accuracy	Higher accuracy
+
+11. Why Decision Tree overfits?
+
+Because it keeps splitting data until it memorizes patterns, instead of generalizing.
+
+Evaluation Questions
+12. What is R² score?
+
+It measures how well the model explains variance in data (closer to 1 = better).
+
+13. Why is MSE used?
+
+It measures average squared difference between predicted and actual values.
+
+ Deployment Questions
+14. Why Streamlit?
+
+Because it allows:
+
+Fast deployment
+Simple UI creation
+Real-time ML interaction
+15. How does your app work?
+
+User inputs features → model processes data → trained Random Forest predicts price → result displayed instantly.
+
+16. What would i improve?
+More data
+Better feature engineering
+Advanced models like XGBoost
+Add user personalization
+17. What is the real-world impact?
+
+Helps buyers, sellers, and investors estimate fair property prices in Karachi.
