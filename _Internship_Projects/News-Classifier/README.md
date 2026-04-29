@@ -33,7 +33,6 @@ It is designed as a research + portfolio project, showcasing how modern NLP syst
 
 🚀 Features
 
----
 
 🔮 1. News Prediction
 
