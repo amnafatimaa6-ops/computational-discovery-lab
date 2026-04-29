@@ -8,18 +8,13 @@ st.set_page_config(page_title="🏡 House Price Predictor", page_icon="🏠")
 
 st.title("🏡 House Price Predictor (Live Model)")
 
-# -------------------------
-# Load model once
-# -------------------------
 @st.cache_resource
 def load_model():
     return train_model()
 
 model, location_avg, model_r2 = load_model()
 
-# -------------------------
-# User Inputs
-# -------------------------
+
 st.sidebar.header("Property Details")
 bedrooms = st.sidebar.slider("Bedrooms", 1, 10, 3)
 bathrooms = st.sidebar.slider("Bathrooms", 1, 7, 3)
@@ -28,9 +23,7 @@ location = st.sidebar.selectbox("Location", list(location_avg.index))
 property_type = st.sidebar.selectbox("Property Type", ["House", "Flat"])
 furnishing = st.sidebar.selectbox("Furnishing", ["Furnished", "Unfurnished"])
 
-# -------------------------
-# Helper: format price in Cr/Lakh
-# -------------------------
+
 def format_price(amount):
     crore = amount // 10_000_00
     lakh = (amount % 10_000_00) // 100_000
@@ -39,12 +32,10 @@ def format_price(amount):
     else:
         return f"{int(lakh)} Lakh"
 
-# -------------------------
-# Prediction
-# -------------------------
+
 if st.button("Predict Price 💰"):
 
-    # Prepare input data
+
     input_data = pd.DataFrame([{
         'bedrooms': bedrooms,
         'bathrooms': bathrooms,
@@ -54,10 +45,10 @@ if st.button("Predict Price 💰"):
         'furnishing_status_Unfurnished': int(furnishing == 'Unfurnished')
     }])
 
-    # Make prediction
+    
     prediction = model.predict(input_data)[0]
 
-    # Use ±10% range for estimate
+   
     low_price = prediction * 0.9
     high_price = prediction * 1.1
 
@@ -68,12 +59,8 @@ if st.button("Predict Price 💰"):
     st.success(f"Estimated Price Range: {formatted_low} – {formatted_high}")
     st.info(f"⚠️ Note: This is an **average estimate** based on historical data for {location}.")
 
-    # Model confidence
     st.write(f"📊 Model Confidence (R² Score): {model_r2:.2%}")
 
-    # -------------------------
-    # Plot: Location Average Prices
-    # -------------------------
     loc_df = pd.DataFrame({
         'Location': location_avg.index,
         'Average_Price': location_avg.values
@@ -92,9 +79,7 @@ if st.button("Predict Price 💰"):
     fig.update_layout(xaxis_tickangle=-45)
     st.plotly_chart(fig, use_container_width=True)
 
-    # -------------------------
-    # Plot: Predicted Price Range Gauge
-    # -------------------------
+  
     fig_range = go.Figure(go.Indicator(
         mode = "gauge+number",
         value = prediction,
