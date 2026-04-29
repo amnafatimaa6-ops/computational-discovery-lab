@@ -51,7 +51,7 @@ if st.button("Generate 🎧"):
     else:
 
         # -------------------------
-        # 🎵 RECOMMENDATIONS (HORIZONTAL ROW)
+        # RECOMMENDATIONS (HORIZONTAL ROW)
         # -------------------------
         st.subheader("🎵 Recommendations")
 
@@ -76,7 +76,7 @@ if st.button("Generate 🎧"):
 
 
 # -------------------------
-# 🎤 SIMILAR ARTISTS (ALBUM COVER ROW)
+# SIMILAR ARTISTS (ALBUM COVER ROW)
 # -------------------------
 if artist:
 
@@ -102,7 +102,7 @@ if artist:
 
 
 # -------------------------
-# 🔥 WEEKLY TRENDING (ROW STYLE)
+#WEEKLY TRENDING (ROW STYLE)
 # -------------------------
 st.subheader("🔥 Weekly Trending AI Songs")
 
