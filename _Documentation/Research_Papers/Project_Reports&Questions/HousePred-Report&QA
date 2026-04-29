@@ -166,6 +166,7 @@ Lower accuracy	Higher accuracy
 Because it keeps splitting data until it memorizes patterns, instead of generalizing.
 
 Evaluation Questions
+
 12. What is R² score?
 
 It measures how well the model explains variance in data (closer to 1 = better).
@@ -175,6 +176,7 @@ It measures how well the model explains variance in data (closer to 1 = better).
 It measures average squared difference between predicted and actual values.
 
  Deployment Questions
+
 14. Why Streamlit?
 
 Because it allows:
@@ -182,15 +184,18 @@ Because it allows:
 Fast deployment
 Simple UI creation
 Real-time ML interaction
+
 15. How does your app work?
 
 User inputs features → model processes data → trained Random Forest predicts price → result displayed instantly.
 
 16. What would i improve?
+
 More data
 Better feature engineering
 Advanced models like XGBoost
 Add user personalization
+
 17. What is the real-world impact?
 
 Helps buyers, sellers, and investors estimate fair property prices in Karachi.
