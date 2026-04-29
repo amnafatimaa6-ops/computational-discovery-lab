@@ -11,11 +11,12 @@
 
 ### 🧠 App in Action
 
-![Demo 1](karachi-HousePrice.demo1.gif)
+![Demo 1](demos/karachi-HousePrice.demo1.gif)
 
-![Demo 2](karachi-HousePrice.demo2.gif)
+![Demo 2](demos/karachi-HousePrice.demo2.gif)
 
-![Demo 3](karachi-HousePrice.demo3.gif)
+![Demo 3](demos/karachi-HousePrice.demo3.gif)
+
 
 ---
 
