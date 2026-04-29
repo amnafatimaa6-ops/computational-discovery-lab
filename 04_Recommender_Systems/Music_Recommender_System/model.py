@@ -5,9 +5,7 @@ import requests
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 
-# -------------------------
-# LOAD DATA (FIXED PATH SAFETY)
-# -------------------------
+
 try:
     df = pd.read_csv("data/music_df.csv")
 except:
@@ -16,9 +14,7 @@ except:
     except:
         df = pd.DataFrame()
 
-# -------------------------
-# COLUMN FIX (SAFE)
-# -------------------------
+
 if not df.empty:
 
     if "track_artist" not in df.columns:
@@ -41,27 +37,21 @@ if not df.empty:
     df = df.dropna()
     df = df.reset_index(drop=True)
 
-# -------------------------
-# LOAD EMBEDDINGS
-# -------------------------
+
 try:
     with open("text_embeddings.pkl", "rb") as f:
         text_embeddings = pickle.load(f)
 except:
     text_embeddings = None
 
-# -------------------------
-# LOAD MODEL
-# -------------------------
+
 try:
     model = SentenceTransformer("all-MiniLM-L6-v2")
 except:
     model = None
 
 
-# -------------------------
-# 🔍 SEARCH (UNCHANGED LOGIC)
-# -------------------------
+
 def search_music(query, top_n=10):
 
     if df.empty:
@@ -109,9 +99,7 @@ def search_music(query, top_n=10):
         return []
 
 
-# -------------------------
-# 🎤 SIMILAR ARTISTS (WITH ALBUM COVERS)
-# -------------------------
+
 def get_similar_artists(artist, top_n=5):
 
     if df.empty:
@@ -144,9 +132,6 @@ def get_similar_artists(artist, top_n=5):
         return []
 
 
-# -------------------------
-# 🔥 WEEKLY TRENDING AI SONGS (WITH COVERS)
-# -------------------------
 def get_weekly_trending(top_n=10):
 
     if df.empty:
@@ -172,9 +157,6 @@ def get_weekly_trending(top_n=10):
         return []
 
 
-# -------------------------
-# 🎧 DEEZER API (UNCHANGED)
-# -------------------------
 def get_deezer(song):
 
     try:
