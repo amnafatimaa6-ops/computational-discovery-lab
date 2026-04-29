@@ -1,1 +1,2 @@
-# amna-data-science-portfolio
+# Computational Intelligence & Scientific AI Lab
+
