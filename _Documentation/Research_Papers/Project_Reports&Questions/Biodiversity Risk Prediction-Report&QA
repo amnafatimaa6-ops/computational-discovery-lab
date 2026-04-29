@@ -1,0 +1,150 @@
+Project Report
+
+Overview
+
+This project applies machine learning techniques to long-term biodiversity data in order to predict species extinction risk categories such as Stable, Vulnerable, and Endangered. Instead of relying on static snapshots,
+the system analyses population changes over time (1970–2020) to capture meaningful ecological trends.
+
+The core objective is not only prediction, but also understanding how ecological decline patterns emerge and how dataset bias can influence global conservation insights.
+
+ Objective
+
+The main goal of this project is to determine:
+
+Can machine learning models classify species extinction risk based on long-term population trends?
+
+Additionally, the project investigates how data imbalance across regions affects ecological interpretations.
+
+Dataset
+Over 5,000 species
+More than 420,000 records
+Time span: 1970–2020
+Coverage: 200+ countries
+
+Key features include:
+
+Species name
+Country and classification
+Year-wise population values
+Ecological metadata
+
+Methodology
+
+1. Data Preprocessing
+Converted dataset from wide to long format
+Handled missing population values
+Standardized temporal columns
+Aggregated species-level trends
+2. Feature Engineering
+
+New ecological indicators were created:
+
+Population Change
+Growth Ratio
+Logarithmic Change
+
+These features represent behavioral ecological patterns, not just raw values.
+
+3. Risk Classification
+
+Species were categorized as:
+
+🟢 Stable
+🟡 Vulnerable
+🔴 Endangered
+
+based on long-term decline thresholds.
+
+4. Machine Learning Models
+
+Three models were tested:
+
+Logistic Regression (~91.7%)
+Random Forest (95.8%)
+Gradient Boosting (95.8%)
+
+Final selection: Random Forest
+Reason: Best balance between accuracy and interpretability.
+
+ Key Findings
+
+Relative population change is more important than raw numbers
+Growth Ratio and Log Change are the strongest predictors
+Species populations show continuous decline patterns rather than sudden collapse
+High-risk classification is strongly influenced by data availability
+
+Critical Insight 
+
+The model revealed an important limitation:
+
+Countries like the USA and UK appear to have higher extinction risk — but this is largely due to better data collection systems, not necessarily higher biodiversity loss.
+
+This highlights data bias in ecological machine learning systems, a key real-world challenge.
+
+Conclusion
+
+This project demonstrates how machine learning can be used for ecological forecasting while also revealing deeper structural issues in biodiversity data.
+
+It shows that:
+
+ML can identify hidden ecological patterns
+But data quality and coverage heavily influence conclusions
+Scientific interpretation is just as important as model accuracy
+
+----
+
+Questions & Answers 
+
+
+# 1. What was my project about?
+
+Answer:
+My project focused on predicting species extinction risk using machine learning. I used long-term population data from 1970 to 2020 to classify species into Stable, Vulnerable, and Endangered categories. 
+But beyond prediction, I also analyzed how ecological patterns and data bias affect conservation insights.
+
+# 2. Why did i choose this problem?
+
+Answer:
+Because biodiversity loss is a real global issue, but I noticed most analyses rely on static data. I wanted to explore whether machine learning could capture temporal ecological trends, not just snapshots, and whether it could reveal hidden patterns in species decline.
+
+# 3. What machine learning models did i use?
+
+Answer:
+I tested Logistic Regression, Random Forest, and Gradient Boosting. Random Forest performed best with around 95.8% accuracy because it handles nonlinear relationships well and is more interpretable for ecological
+analysis.
+
+# 4. What was the most important feature?
+
+Answer:
+The most important feature was the Growth Ratio, which measures proportional population change. It turned out to be more informative than raw population numbers, which aligns with ecological theory.
+
+# 5. Did my face any challenges?
+
+Answer:
+Yes, the biggest challenge was handling missing and inconsistent time-series data. Another major challenge was avoiding misleading conclusions due to dataset bias across countries.
+
+# 6. What did i learn from this project?
+
+Answer:
+I learned that machine learning is not just about accuracy — it’s about interpretation. Even a highly accurate model can reflect bias in the dataset, especially in global ecological studies where data 
+collection is uneven.
+
+# 7. What makes my project unique?
+
+Answer:
+Most projects stop at prediction. Mine goes further by analyzing why the predictions look the way they do, especially in terms of geographical and data bias effects. It combines ML with critical scientific thinking.
+
+# 8. How can this project be improved?
+
+Answer:
+It can be improved by integrating real-time environmental data, adding deep learning models for sequence prediction, and expanding to global biodiversity monitoring systems.
+
+# 9. What is the real-world impact of my project?
+
+Answer:
+It can help conservation researchers identify at-risk species earlier and also highlight where data collection systems need improvement, especially in underrepresented regions.
+
+# 10. Why should someone fund or support this research?
+
+Answer:
+Because it combines machine learning with environmental science to address a real global issue. It doesn’t just predict outcomes — it improves how we interpret ecological data, which is crucial for future conservation strategies.
