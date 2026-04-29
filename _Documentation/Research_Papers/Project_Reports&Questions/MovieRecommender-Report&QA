@@ -1,0 +1,156 @@
+Project Report 
+ O#verview
+
+This project is a Streamlit-based Movie Recommendation System designed to suggest films using multiple machine learning techniques. The system goes beyond basic keyword matching and incorporates both statistical 
+text analysis (TF-IDF) and deep semantic understanding (Sentence Transformers) to improve recommendation quality.
+
+The goal is to build a system that not only recommends similar movies, but also understands meaning, context, and user intent behind movie descriptions.
+
+#Objective
+
+The main objective of this project is:
+
+To design a hybrid recommendation system that improves movie suggestions using both lexical similarity and semantic understanding of movie content.
+
+It also aims to make recommendations more interactive by integrating ratings, popularity, and YouTube trailers.
+
+#Dataset
+
+The dataset includes movie metadata such as:
+
+Title
+Overview
+Genres
+Tagline
+Vote average
+Popularity
+
+The dataset is automatically fetched from Google Drive and preprocessed for machine learning tasks.
+
+⚙️ Methodology
+1. Data Preprocessing
+Removed duplicates and missing values
+Extracted and cleaned genres
+Combined overview, tagline, and genres into a unified text field
+Applied NLP preprocessing (tokenization, stopword removal, lemmatization)
+
+2. Feature Engineering
+
+A combined text feature called tags was created:
+
+tags = overview + genres + tagline
+
+This allows the model to understand movies as complete semantic objects instead of isolated attributes.
+
+3. Recommendation Models
+
+#TF-IDF Based Model
+Converts text into numerical vectors
+Uses cosine similarity
+Focuses on word overlap
+Works well for surface-level similarity
+
+# Semantic Model (Sentence Transformers)
+Uses pre-trained transformer model (all-MiniLM-L6-v2)
+Converts movie descriptions into embeddings
+ Captures deep contextual meaning
+
+# Hybrid Model
+
+Combines both:
+
+Final Score = 0.5 × TF-IDF + 0.5 × Semantic Similarity
+
+Balances keyword matching + contextual understanding
+
+#Genre-Based Filtering
+Simple rule-based filtering using extracted genres
+Allows user-driven exploration
+
+#Extra Feature: Trailer Integration
+
+The system dynamically fetches YouTube trailers for recommended movies, improving user experience and interpretability.
+
+#Key Insights
+TF-IDF performs well for similar wording but lacks depth
+Semantic model captures meaning even when words differ
+Hybrid model provides the most balanced and accurate recommendations
+Movie popularity and ratings improve recommendation context
+Real-world recommendation systems require multiple signals, not just text similarity
+
+#Technologies Used
+Python
+Pandas, NumPy
+Scikit-learn
+Sentence Transformers
+NLTK
+Streamlit
+Google Drive API (gdown)
+YouTube search integration
+
+#Results
+
+Hybrid model produced the most consistent recommendations
+Semantic embeddings significantly improved contextual accuracy
+System successfully integrates ranking, similarity, and real-time trailer embedding
+User experience improved through interactive UI and metadata display
+
+Conclusion
+
+This project demonstrates how modern recommendation systems evolve beyond simple text matching. By combining classical NLP (TF-IDF) with transformer-based embeddings, the system achieves a more human-like understanding 
+of movie similarity.
+
+It reflects how real-world AI systems operate — blending multiple models to improve accuracy, interpretability, and user experience.
+
+#Questions 
+
+# 1. What is your project about?
+
+Answer:
+It is a movie recommendation system that suggests movies using different machine learning techniques like TF-IDF, semantic embeddings, and hybrid models. It also shows ratings, popularity, and trailers for better user
+experience.
+
+# 2. Why did i use both TF-IDF and Sentence Transformers?
+
+Answer:
+Because TF-IDF captures word-level similarity, while Sentence Transformers understand meaning. Combining both gives better and more realistic recommendations.
+
+# 3. What is the hybrid model?
+
+Answer:
+The hybrid model is a weighted combination of TF-IDF similarity and semantic similarity. It balances lexical matching and contextual understanding to improve recommendation accuracy.
+
+# 4. What was the most challenging part of the project?
+
+Answer:
+Integrating semantic embeddings efficiently and caching them was challenging because they are computationally expensive. Another challenge was balancing different recommendation methods.
+
+# 5. How does your system improve over traditional recommendation systems?
+
+Answer:
+Traditional systems rely only on keywords or ratings. My system understands meaning using NLP embeddings and combines multiple approaches, making recommendations more intelligent and human-like.
+
+# 6. What is the role of Streamlit in  my project?
+
+Answer:
+Streamlit is used to build an interactive web interface where users can select movies, view recommendations, and watch trailers in real time.
+
+# 7. What did i learn from this project?
+
+Answer:
+I learned how to combine classical NLP with modern deep learning models, and how hybrid systems perform better in real-world applications than single-method approaches.
+
+# 8. How can this project be improved?
+
+Answer:
+It can be improved by adding user personalization, watch history-based recommendations, and deploying it with a scalable backend like cloud-based APIs.
+
+# 9. What makes my project unique?
+
+Answer:
+It doesn’t rely on just one model. It combines multiple recommendation strategies, includes real-time trailer integration, and provides an interactive UI — making it closer to real industry-level systems.
+
+# 10. What is the real-world use of this system?
+
+Answer:
+It can be used in streaming platforms like Netflix-style systems to recommend movies based on user preferences, content similarity, and contextual understanding.
