@@ -71,11 +71,20 @@ Data Handling: Pandas, NumPy
 Visualization: Matplotlib, Seaborn
 
 📂 Project Structure
-├── app.py          # Streamlit dashboard
-├── train.py        # Model training & evaluation script
-├── model/          # Saved trained model
-├── tokenizer/      # Saved tokenizer
-└── README.md       # Project documentation
+├── app.py  
+# Streamlit dashboard
+
+├── train.py     
+# Model training & evaluation script
+
+├── model/     
+# Saved trained model
+
+├── tokenizer/   
+# Saved tokenizer
+
+└── README.md   
+# Project documentation
 
 🎯 Use Case
 
