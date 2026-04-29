@@ -1,4 +1,4 @@
-# model_code.py
+#model_code.py
 import pandas as pd
 import numpy as np
 import re
@@ -11,14 +11,14 @@ from sklearn.metrics.pairwise import cosine_similarity
 import os
 
 # ------------------- NLTK setup ------------------- #
-# Use a local folder for nltk data (put nltk_data folder in repo if possible)
+
 nltk_data_path = "./nltk_data"
 if not os.path.exists(nltk_data_path):
     os.makedirs(nltk_data_path)
 
 nltk.data.path.append(nltk_data_path)
 
-# Download only if missing
+
 try:
     stop_words = set(stopwords.words('english'))
 except:
