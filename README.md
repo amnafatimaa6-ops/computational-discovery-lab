@@ -18,14 +18,19 @@ This combination of structured learning and applied experimentation has shaped m
 
 ## 🎯 Academic and Research Objective
 
-My long-term academic and professional objective is to develop into a scientific data scientist specializing in AI-driven analysis of complex natural systems, particularly in:
+am pursuing a long-term research trajectory in Computational Intelligence for Scientific Discovery, focusing on the application of machine learning to understand complex, high-dimensional, and noisy natural systems.
 
-🌌 Space Science and Astrophysical Data Analysis
+My work explores how AI can be used not only for prediction, but for discovering hidden structure, anomalies, and latent relationships in scientific datasets.
 
-🌊 Oceanography and Marine Intelligence Systems
+My primary research focus spans:
+
+🌌 Astrophysical Systems Intelligence (space data, exoplanet analysis, anomaly detection)
+
+🌍 Earth System Intelligence (climate dynamics, environmental modelling, ecological prediction)
+
+🌐 Complex Data Systems Modelling (pattern discovery across structured and unstructured scientific datasets)
 
 I am actively engaged in studying these domains to develop a strong interdisciplinary foundation that integrates machine learning with scientific discovery and computational modelling.
-
 ---
 
 ## 📁 Portfolio Overview
@@ -135,15 +140,13 @@ Deployment using Streamlit and API integration
 
 ## 🚀 Research Vision
 
-My academic direction is centered on the development of AI systems for scientific discovery, where machine learning is utilized not only for prediction, but for uncovering latent structures within complex datasets.
+My goal is to contribute to the development of AI systems capable of supporting scientific discovery across disciplines by identifying patterns in complex datasets that are not easily interpretable through traditional analytical methods.
 
-I am particularly motivated by the application of AI in:
+I am particularly interested in building scalable machine learning frameworks that assist in:
 
-Space exploration and astrophysical signal interpretation
-
-Oceanic and environmental system modelling
-
-This work reflects my commitment to advancing toward research that bridges artificial intelligence and scientific computation.
+Understanding astrophysical signals in space exploration
+Modelling environmental and ecological transitions on Earth
+Developing generalizable approaches to pattern recognition in scientific data
 
 ---
 
