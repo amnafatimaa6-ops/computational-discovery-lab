@@ -145,12 +145,19 @@ The repository is organized to reflect a structured progression across domains a
 ## 📦 Portfolio Repository
 
 ├── 01_Space_Intelligence/
+
 ├── 02_Climate_Intelligence/
+
 ├── 02_Endangered_Species_Prediction/
+
 ├── 03_Geospatial_Intelligence/
+
 ├── 04_Recommender_Systems/
+
 ├── _Internship_Projects/
-├── _Documentation_Research_Papers/
+
+├── _Documentation_Research_Papers
+
 📚 Documentation & Research Papers
 
 This section includes:
