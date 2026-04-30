@@ -146,9 +146,7 @@ The repository is organized to reflect a structured progression across domains a
 
 ├── 01_Space_Intelligence/
 
-├── 02_Climate_Intelligence/
-
-├── 02_Endangered_Species_Prediction/
+├── 02_Earth_System_Analysis
 
 ├── 03_Geospatial_Intelligence/
 
