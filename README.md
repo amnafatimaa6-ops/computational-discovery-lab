@@ -1,38 +1,47 @@
 # Computational Intelligence & Scientific AI Lab
 
-## 👤 Applicant Profile
+## 👤 Research Profile
 
-I am a Computer Science student from Pakistan with a strong, self-directed foundation in Artificial Intelligence, Machine Learning, and Data Science.
+I am an undergraduate Computer Science student from Pakistan with a research-oriented focus in Artificial Intelligence, Machine Learning, and Data Science, developed through self-directed study, applied experimentation, and interdisciplinary exploration.
 
-My preparation in this field has been primarily self-initiated and research-oriented, supported by:
+My work is driven by a central question:
 
-Completion of multiple online AI/ML courses
-Continuous engagement with technical literature and research articles
-Practical experience through internships
-Participation in hackathons and applied AI challenges
-Independent development of end-to-end machine learning systems
+How can machine learning be used to uncover hidden structure in complex, high-dimensional, and noisy scientific data?
 
-This combination of structured learning and applied experimentation has shaped my approach toward problem-solving in data-driven environments.
+My preparation includes:
+
+Independent completion of advanced AI/ML coursework
+Continuous engagement with scientific literature and research papers
+Development of end-to-end machine learning systems
+Participation in applied AI challenges and technical projects
+Research-style documentation of experimental work
 
 ---
 
 ## 🎯 Academic and Research Objective
 
-am pursuing a long-term research trajectory in Computational Intelligence for Scientific Discovery, focusing on the application of machine learning to understand complex, high-dimensional, and noisy natural systems.
+My academic trajectory is centered on:
 
-My work explores how AI can be used not only for prediction, but for discovering hidden structure, anomalies, and latent relationships in scientific datasets.
+Computational Intelligence for Scientific Discovery
 
-My primary research focus spans:
+I focus on the application of AI to model, analyse, and interpret complex natural systems, where traditional analytical methods are often insufficient.
 
-🌌 Astrophysical Systems Intelligence (space data, exoplanet analysis, anomaly detection)
+Core Areas of Interest:
+🌌 Astrophysical Data Intelligence
+🌍 Earth System & Climate Intelligence
+🧬 Ecological and Biodiversity Modelling
+🧠 Pattern Discovery in High-Dimensional Data Systems
 
-🌍 Earth System Intelligence (climate dynamics, environmental modelling, ecological prediction)
+My work explores how machine learning can move beyond prediction to:
 
-🌐 Complex Data Systems Modelling (pattern discovery across structured and unstructured scientific datasets)
+detect anomalies
+identify latent structures
+model dynamic systems
+support scientific inference
 
 I am actively engaged in studying these domains to develop a strong interdisciplinary foundation that integrates machine learning with scientific discovery and computational modelling.
 
-## 🧭 Research Domain Architecture
+---
 
 ## 🧭 Research Domain Architecture
 
@@ -63,66 +72,70 @@ F --> F1[Recommender Systems]
 F --> F2[Applied ML Systems]
 ```
 
-## 📁 Portfolio Overview
 
 ---
 
-## 📁 Portfolio Overview
+## Research Domains & Project Work
 
-This repository contains a collection of applied AI and Machine Learning projects developed to explore real-world datasets and scientific systems across multiple domains:
+This repository is structured as a collection of domain-focused research modules.
 
----
+## 🛰️ Space Intelligence Systems
 
-🛰️ Space Intelligence Systems
+Application of unsupervised learning and anomaly detection techniques on astrophysical datasets (e.g., Kepler TCE data) to identify non-obvious orbital patterns and signal irregularities.
 
-Application of unsupervised learning and anomaly detection techniques on NASA exoplanet datasets to identify hidden astrophysical patterns and orbital structures.
+## 🌍 Climate & Earth System Intelligence
 
----
+Comparative modelling of CO₂ emission trends using classical machine learning and deep learning approaches to analyse long-term environmental dynamics under real-world constraints.
 
-🌍 Climate Intelligence Modelling
+## 🧬 Biodiversity & Ecological Intelligence
 
-Comparative study of classical machine learning and deep learning approaches for CO₂ emission forecasting and climate trend analysis under real-world constraints.
+Machine learning models for predicting species population decline and extinction risk, with additional analysis of dataset bias in global ecological reporting systems.
 
----
+## 🏛️ Geospatial & Structural Intelligence
 
-🧬 Biodiversity and Ecological Risk Prediction
+Exploration of geometric and spatial patterns in historical and archaeological datasets using clustering and unsupervised learning techniques.
 
-Machine learning framework designed to model long-term species population trends and classify extinction risk levels while also analyzing dataset bias in global ecological reporting systems.
+## 🎬🎧 Intelligent Recommender Systems
 
----
+Development of hybrid recommendation systems integrating:
 
-🏛️ Geospatial and Archaeological Intelligence
-
-Unsupervised learning-based exploration of structural and spatial patterns in ancient architectural datasets, with emphasis on geometric consistency and regional clustering.
-
----
-
-🎬🎧 Intelligent Recommender Systems
-
-Development of hybrid recommendation engines for movies and music using natural language processing, transformer embeddings, and audio feature engineering.
-
----
+NLP (Transformer-based embeddings)
+user interaction modelling
+audio feature engineering
 
 ## 🏠📊 Applied Machine Learning Systems
 
-Industry-oriented projects including:
+Implementation of real-world predictive systems, including:
 
-Real estate price prediction systems
+Real estate price prediction
+Financial time-series forecasting
+Transformer-based news classification
 
-Financial time-series forecasting (stock markets)
-
-Transformer-based news classification models
+These systems demonstrate applied machine learning under practical constraints and diverse data modalities.
 
 ---
 
 ## 📄 Research Contributions & Academic Work
 
-In addition to applied project development, I have also authored research-style documentation and project reports for several of these systems. These documents include methodological explanations, experimental design, evaluation metrics, and scientific interpretation of results.
+All major projects are accompanied by research-style documentation, including:
 
-These research write-ups reflect an effort to align my work with academic standards of reproducibility, clarity, and analytical depth, similar to early-stage scientific research documentation.
+Problem formulation
 
-All reports and research papers are included in the repository under the documentation section.
+Dataset description
 
+Methodology and model design
+
+Evaluation metrics and performance analysis
+
+Observations, limitations, and future directions
+
+These reports are designed to reflect early-stage academic research standards, emphasizing:
+
+clarity
+
+reproducibility
+
+analytical depth
 ---
 
 ## 📁 Repository Structure
@@ -174,19 +187,16 @@ Deployment using Streamlit and API integration
 
 ## 🚀 Research Vision
 
-My goal is to contribute to the development of AI systems capable of supporting scientific discovery across disciplines by identifying patterns in complex datasets that are not easily interpretable through traditional analytical methods.
+This work represents an ongoing effort to develop AI systems capable of contributing to scientific discovery across domains.
 
-I am particularly interested in building scalable machine learning frameworks that assist in:
+My long-term goal is to:
 
-Understanding astrophysical signals in space exploration
-Modelling environmental and ecological transitions on Earth
-Developing generalizable approaches to pattern recognition in scientific data
-
+build computational frameworks that enable the discovery of meaningful patterns in complex natural systems, supporting research in space science, environmental modelling, and beyond.
 
 ---
 
 ## 🌱 Closing Statement
 
-This portfolio represents an evolving body of work shaped by independent learning, applied experimentation, and interdisciplinary curiosity.
+This repository reflects a progression from applied machine learning toward research-oriented AI development, shaped by independent learning, interdisciplinary curiosity, and sustained experimentation.
 
-It reflects my sustained effort to build a strong foundation in AI and data science, with a clear intention to contribute to scientific research-driven applications of machine learning in space and environmental domains.
+It is intended as a foundation for future academic work in Artificial Intelligence for Scientific Research.
