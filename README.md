@@ -31,6 +31,35 @@ My primary research focus spans:
 🌐 Complex Data Systems Modelling (pattern discovery across structured and unstructured scientific datasets)
 
 I am actively engaged in studying these domains to develop a strong interdisciplinary foundation that integrates machine learning with scientific discovery and computational modelling.
+
+## 🧭 Research Domain Architecture
+
+```mermaid
+graph TD
+
+A[Computational Intelligence for Scientific Discovery]
+
+A --> B[Space Intelligence Systems]
+A --> C[Earth & Climate Intelligence]
+A --> D[Ecological & Biodiversity Systems]
+A --> E[Geospatial & Structural Intelligence]
+A --> F[Intelligent AI Systems]
+
+B --> B1[Exoplanet Analysis]
+B --> B2[TCE Anomaly Detection]
+
+C --> C1[CO2 Forecasting]
+C --> C2[Climate Trend Modelling]
+
+D --> D1[Species Prediction]
+D --> D2[Extinction Risk Modelling]
+
+E --> E1[Geometric Analysis]
+E --> E2[Pattern Clustering]
+
+F --> F1[Recommender Systems]
+F --> F2[Applied ML Systems]
+
 ---
 
 ## 📁 Portfolio Overview
@@ -149,33 +178,6 @@ Modelling environmental and ecological transitions on Earth
 Developing generalizable approaches to pattern recognition in scientific data
 
 
-## 🧭 Research Domain Architecture
-
-```mermaid
-graph TD
-
-A[Computational Intelligence for Scientific Discovery]
-
-A --> B[Space Intelligence Systems]
-A --> C[Earth & Climate Intelligence]
-A --> D[Ecological & Biodiversity Systems]
-A --> E[Geospatial & Structural Intelligence]
-A --> F[Intelligent AI Systems]
-
-B --> B1[Exoplanet Analysis]
-B --> B2[TCE Anomaly Detection]
-
-C --> C1[CO2 Forecasting]
-C --> C2[Climate Trend Modelling]
-
-D --> D1[Species Prediction]
-D --> D2[Extinction Risk Modelling]
-
-E --> E1[Geometric Analysis]
-E --> E2[Pattern Clustering]
-
-F --> F1[Recommender Systems]
-F --> F2[Applied ML Systems]
 ---
 
 ## 🌱 Closing Statement
