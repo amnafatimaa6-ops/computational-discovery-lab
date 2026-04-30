@@ -34,15 +34,17 @@ I am actively engaged in studying these domains to develop a strong interdiscipl
 
 ## 🧭 Research Domain Architecture
 
+## 🧭 Research Domain Architecture
+
 ```mermaid
 graph TD
 
 A[Computational Intelligence for Scientific Discovery]
 
 A --> B[Space Intelligence Systems]
-A --> C[Earth & Climate Intelligence]
-A --> D[Ecological & Biodiversity Systems]
-A --> E[Geospatial & Structural Intelligence]
+A --> C[Earth and Climate Intelligence]
+A --> D[Ecological and Biodiversity Systems]
+A --> E[Geospatial and Structural Intelligence]
 A --> F[Intelligent AI Systems]
 
 B --> B1[Exoplanet Analysis]
@@ -59,6 +61,9 @@ E --> E2[Pattern Clustering]
 
 F --> F1[Recommender Systems]
 F --> F2[Applied ML Systems]
+```
+
+## 📁 Portfolio Overview
 
 ---
 
