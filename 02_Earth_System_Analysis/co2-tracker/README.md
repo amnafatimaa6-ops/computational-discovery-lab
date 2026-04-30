@@ -39,19 +39,18 @@ https://co2-tracker-nwer9esjbrkj9r5xsmphlj.streamlit.app/
 
 
  
-### 📸 App Demo 1
-![Demo 1](demo1.gif)
+### Demo 1
+![Demo 1](demos/demo1.gif)
 
+---
 
+### Demo 2
+![Demo 2](demos/demo2.gif)
 
-### 📸 App Demo 2
-![Demo 2](demo2.gif)
+---
 
-
-
-### 📸 App Demo 3
-![Demo 3](demo3.gif)
-
+### Demo 3
+![Demo 3](demos/demo3.gif)
 ---------------------------------------------------------------------------------------
 
 🧪 Experimental Setup
