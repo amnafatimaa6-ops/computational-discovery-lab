@@ -27,9 +27,13 @@ Computational Intelligence for Scientific Discovery
 I focus on the application of AI to model, analyse, and interpret complex natural systems, where traditional analytical methods are often insufficient.
 
 Core Areas of Interest:
+
 🌌 Astrophysical Data Intelligence
+
 🌍 Earth System & Climate Intelligence
+
 🧬 Ecological and Biodiversity Modelling
+
 🧠 Pattern Discovery in High-Dimensional Data Systems
 
 My work explores how machine learning can move beyond prediction to:
@@ -100,7 +104,9 @@ Exploration of geometric and spatial patterns in historical and archaeological d
 Development of hybrid recommendation systems integrating:
 
 NLP (Transformer-based embeddings)
+
 user interaction modelling
+
 audio feature engineering
 
 ## 🏠📊 Applied Machine Learning Systems
@@ -108,7 +114,9 @@ audio feature engineering
 Implementation of real-world predictive systems, including:
 
 Real estate price prediction
+
 Financial time-series forecasting
+
 Transformer-based news classification
 
 These systems demonstrate applied machine learning under practical constraints and diverse data modalities.
