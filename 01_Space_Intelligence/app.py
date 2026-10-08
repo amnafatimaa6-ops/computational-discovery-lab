@@ -12,17 +12,15 @@ from sklearn.ensemble import IsolationForest
 import plotly.express as px
 import plotly.graph_objects as go
 
-# -----------------------------
 # PAGE CONFIG
-# -----------------------------
+
 st.set_page_config(
     page_title="NASA Mission Control V4",
     layout="wide"
 )
 
-# -----------------------------
-# 🌌 GLOWING HUD + STARFIELD (DO NOT REMOVE)
-# -----------------------------
+#  GLOWING HUD + STARFIELD 
+
 st.markdown("""
 <style>
 
@@ -85,15 +83,14 @@ div[data-testid="stMetricValue"] {
 </style>
 """, unsafe_allow_html=True)
 
-# -----------------------------
 # TITLE
-# -----------------------------
+
 st.title("🛰️ NASA MISSION CONTROL — FLAGSHIP V4")
 st.subheader("Exoplanet Intelligence System | AI Pattern Mining | Orbital Simulation Engine")
 
-# -----------------------------
+
 # FAKE DATA GENERATION
-# -----------------------------
+-
 @st.cache_data
 def generate_data(n=2500):
     np.random.seed(42)
@@ -109,9 +106,8 @@ df = generate_data()
 
 features = ["tce_period", "tce_depth", "tce_duration", "tce_snr"]
 
-# -----------------------------
 # ML PIPELINE
-# -----------------------------
+
 X = df[features]
 
 scaler = StandardScaler()
@@ -126,18 +122,18 @@ anomaly = iso.fit_predict(X_scaled)
 df["cluster"] = clusters
 df["anomaly"] = anomaly
 
-# -----------------------------
+
 # PCA
-# -----------------------------
+
 pca = PCA(n_components=2)
 X_pca = pca.fit_transform(X_scaled)
 
 df["pc1"] = X_pca[:, 0]
 df["pc2"] = X_pca[:, 1]
 
-# -----------------------------
+
 # SIDEBAR CONTROL
-# -----------------------------
+
 st.sidebar.title("📡 CONTROL PANEL")
 
 scan = st.sidebar.button("🛰️ INITIATE DEEP SPACE SCAN")
@@ -149,18 +145,18 @@ if scan:
     time.sleep(1)
     st.sidebar.success("Anomaly map updated")
 
-# -----------------------------
+
 # METRICS
-# -----------------------------
+
 col1, col2, col3 = st.columns(3)
 
 col1.metric("Signals", len(df))
 col2.metric("Anomalies", int((anomaly == -1).sum()))
 col3.metric("Clusters", len(np.unique(clusters)))
 
-# -----------------------------
+
 # SYSTEM STATUS
-# -----------------------------
+
 anomaly_rate = (df["anomaly"] == -1).mean()
 
 if anomaly_rate < 0.05:
@@ -173,9 +169,9 @@ else:
 st.subheader("⚠ SYSTEM STATUS")
 st.write(status)
 
-# -----------------------------
+
 # LIVE TELEMETRY STREAM
-# -----------------------------
+
 st.markdown("## 📡 LIVE TELEMETRY FEED")
 
 telemetry_box = st.empty()
@@ -203,9 +199,9 @@ for t in range(20):
 
     time.sleep(0.12)
 
-# -----------------------------
+
 # MISSION EVENT ENGINE
-# -----------------------------
+
 st.markdown("## 🧠 MISSION EVENT STREAM")
 
 events = [
@@ -223,9 +219,9 @@ for i in range(5):
     event_box.info(random.choice(events))
     time.sleep(0.5)
 
-# -----------------------------
+
 # PCA VISUALIZATION
-# -----------------------------
+
 st.markdown("## 🧠 SIGNAL INTELLIGENCE GRID (PCA)")
 
 fig1 = px.scatter(
@@ -239,9 +235,8 @@ fig1 = px.scatter(
 
 st.plotly_chart(fig1, use_container_width=True)
 
-# -----------------------------
 # ANOMALY RADAR
-# -----------------------------
+
 st.markdown("## 🚨 ANOMALY RADAR")
 
 fig2 = px.scatter(
@@ -255,9 +250,9 @@ fig2 = px.scatter(
 
 st.plotly_chart(fig2, use_container_width=True)
 
-# -----------------------------
+
 # 3D ORBIT SIMULATION
-# -----------------------------
+
 st.markdown("## 🪐 ORBITAL SIGNAL FIELD — 3D SPACE")
 
 fig3 = go.Figure(data=[go.Scatter3d(
@@ -286,9 +281,9 @@ fig3.update_layout(
 
 st.plotly_chart(fig3, use_container_width=True)
 
-# -----------------------------
+
 # DISCOVERY STATUS PANEL
-# -----------------------------
+
 st.markdown("## 📡 CURRENT DISCOVERY STATUS")
 
 signal_strength = np.mean(df["tce_snr"])
@@ -308,9 +303,9 @@ st.write(f"""
 - System Interpretation: Structured exoplanet signal field detected
 """)
 
-# -----------------------------
+
 # AI INTERPRETATION
-# -----------------------------
+
 st.markdown("## 🤖 AI SYSTEM REASONING")
 
 st.write("""
